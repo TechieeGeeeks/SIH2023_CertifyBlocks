@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import SIHLOG from "../img/SIH2023.png";
 import MenuIcon from "../img/menu_icon.svg";
+
 const NavBar = () => {
   const [isMenu, setIsMenu] = useState(false);
 
