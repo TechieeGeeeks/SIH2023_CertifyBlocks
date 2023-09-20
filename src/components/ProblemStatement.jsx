@@ -7,7 +7,7 @@ import Card from "./Card";
 const ProblemStatement = () => {
   return (
     <div>
-      <div className="md:mt-24 mt-12 p-8 flex flex-col items-center justify-center gap-2 text-center ">
+      <div className="md:mt-24 mt-12 p-8 flex flex-col items-center justify-center gap-2 text-center md:mb-52 ">
         <p className="font-semibold text-2xl md:text-4xl">Problem Statement</p>
         <p>
           Businesses generally promote their brand, products, and services by
