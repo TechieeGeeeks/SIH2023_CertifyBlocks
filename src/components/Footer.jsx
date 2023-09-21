@@ -1,5 +1,6 @@
 import React from "react";
 import FooterNav from "./FooterNav";
+import { Link as ScrollLink } from "react-scroll";
 
 const Footer = () => {
   return (
@@ -24,7 +25,6 @@ const Footer = () => {
         <p className="w-full">Quick Links</p>
       </div>
 
-
       {/* For Mobile */}
       <div className="md:hidden w-screen">
         <div className="md:mt-24 mt-12 text-white ">
@@ -40,11 +40,39 @@ const Footer = () => {
           <div className="mt-8">
             <p className="mb-3">Quick Links:</p>
             <ul className=" flex flex-col gap-2 text-sm">
-              <li className=" cursor-pointer ">Idea</li>
-              <li className=" cursor-pointer ">Solution</li>
-              <li className=" cursor-pointer ">Process Flow</li>
-              <li className=" cursor-pointer ">Tech Stack</li>
-              <li className=" cursor-pointer ">Use Case</li>
+              <li className=" cursor-pointer ">
+                <ScrollLink
+                  to="problemStatement"
+                  spy={true}
+                  smooth={false}
+                  offset={-70}
+                  duration={500}
+                >
+                  <p>Problem Statement</p>
+                </ScrollLink>
+              </li>
+              <li className=" cursor-pointer ">
+                <ScrollLink
+                  to="Solution"
+                  spy={true}
+                  smooth={false}
+                  offset={-70}
+                  duration={500}
+                >
+                  <p>Solution</p>
+                </ScrollLink>
+              </li>
+              {/* <li className=" cursor-pointer ">Process Flow</li> */}
+              <ScrollLink
+                to="tech-stack"
+                spy={true}
+                smooth={false}
+                offset={-70}
+                duration={500}
+              >
+                <p>Tech Stack</p>
+              </ScrollLink>
+              {/* <li className=" cursor-pointer ">Use Case</li> */}
             </ul>
           </div>
         </div>
