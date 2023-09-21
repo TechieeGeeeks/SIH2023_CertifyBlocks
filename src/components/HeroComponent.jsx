@@ -3,7 +3,7 @@ import HeroImg from "../img/hero_img.png";
 const HeroComponent = () => {
   return (
     <section
-      className=" h-screen grid grid-cols-1 md:grid-cols-2 w-full md:px-20"
+      className=" h-screen grid grid-cols-1 md:grid-cols-2 w-full "
       id="home"
     >
       <div className="md:w-[80%] flex-1 flex flex-col md:items-start items-center justify-center md:h-[75%] gap-6">

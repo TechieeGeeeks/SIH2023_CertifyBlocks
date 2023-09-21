@@ -1,10 +1,10 @@
 import React from "react";
 import SolutionImg from "../img/solution.png";
-import MobSolutiob from "../img/solution-mob.png"
+import MobSolutiob from "../img/solution-mob.png";
 
 const Solution = () => {
   return (
-    <div>
+    <div id="Solution">
       {/* for desk */}
       <div className="hidden md:flex flex-col mt-12 md:mt-0 p-8  text-center md:mb-52">
         <p className="font-semibold text-2xl md:text-4xl">Solution</p>

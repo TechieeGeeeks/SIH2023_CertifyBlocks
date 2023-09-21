@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import SIHLOG from "../img/SIH2023.png";
 import MenuIcon from "../img/menu_icon.svg";
+import { Link as ScrollLink } from "react-scroll";
+
 const NavBar = () => {
   const [isMenu, setIsMenu] = useState(false);
 
@@ -19,11 +21,41 @@ const NavBar = () => {
         </div>
         <div>
           <ul className="flex gap-5 text-sm">
-            <li className=" cursor-pointer hover:text-bgColor">Idea</li>
-            <li className=" cursor-pointer hover:text-bgColor">Solution</li>
-            <li className=" cursor-pointer hover:text-bgColor">Process Flow</li>
-            <li className=" cursor-pointer hover:text-bgColor">Tech Stack</li>
-            <li className=" cursor-pointer hover:text-bgColor">Use Case</li>
+            <li className="cursor-pointer hover:text-bgColor">
+              <ScrollLink
+                to="problemStatement"
+                spy={true}
+                smooth={false}
+                offset={-70}
+                duration={500}
+              >
+                Problem Statement
+              </ScrollLink>
+            </li>
+            <li className="cursor-pointer hover:text-bgColor">
+              <ScrollLink
+                to="Solution"
+                spy={true}
+                smooth={false}
+                offset={-70}
+                duration={500}
+              >
+                Solution
+              </ScrollLink>
+            </li>
+            {/* <li className=" cursor-pointer hover:text-bgColor">Process Flow</li> */}
+            <li className=" cursor-pointer hover:text-bgColor">
+              <ScrollLink
+                to="tech-stack"
+                spy={true}
+                smooth={false}
+                offset={-70}
+                duration={500}
+              >
+                Tech Stack
+              </ScrollLink>
+            </li>
+            {/* <li className=" cursor-pointer hover:text-bgColor">Use Case</li> */}
           </ul>
         </div>
         <div>
@@ -40,11 +72,39 @@ const NavBar = () => {
         {isMenu && (
           <div className=" absolute right-8 top-24 bg-white p-3 rounded-lg">
             <ul className=" flex flex-col gap-2 text-sm">
-              <li className=" cursor-pointer ">Idea</li>
-              <li className=" cursor-pointer ">Solution</li>
-              <li className=" cursor-pointer ">Process Flow</li>
-              <li className=" cursor-pointer ">Tech Stack</li>
-              <li className=" cursor-pointer ">Use Case</li>
+              <li className=" cursor-pointer ">
+                <ScrollLink
+                  to="problemStatement"
+                  spy={true}
+                  smooth={false}
+                  offset={-70}
+                  duration={500}
+                >
+                  Problem Statement
+                </ScrollLink>
+              </li>
+              <li className=" cursor-pointer ">
+                <ScrollLink
+                  to="Solution"
+                  spy={true}
+                  smooth={false}
+                  offset={-70}
+                  duration={500}
+                >
+                  Solution
+                </ScrollLink>
+              </li>
+              {/* <li className=" cursor-pointer ">Process Flow</li> */}
+              <ScrollLink
+                to="tech-stack"
+                spy={true}
+                smooth={false}
+                offset={-70}
+                duration={500}
+              >
+                Tech Stack
+              </ScrollLink>
+              {/* <li className=" cursor-pointer ">Use Case</li> */}
             </ul>
           </div>
         )}
