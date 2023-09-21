@@ -80,7 +80,7 @@ const NavBar = () => {
                   offset={-70}
                   duration={500}
                 >
-                  Problem Statement
+                  <p onClick={menuHandle}>Problem Statement</p>
                 </ScrollLink>
               </li>
               <li className=" cursor-pointer ">
@@ -91,7 +91,7 @@ const NavBar = () => {
                   offset={-70}
                   duration={500}
                 >
-                  Solution
+                  <p onClick={menuHandle}>Solution</p>
                 </ScrollLink>
               </li>
               {/* <li className=" cursor-pointer ">Process Flow</li> */}
@@ -102,7 +102,7 @@ const NavBar = () => {
                 offset={-70}
                 duration={500}
               >
-                Tech Stack
+                <p onClick={menuHandle}>Tech Stack</p>
               </ScrollLink>
               {/* <li className=" cursor-pointer ">Use Case</li> */}
             </ul>
